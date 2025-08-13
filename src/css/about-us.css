@@ -1,0 +1,125 @@
+.about {
+    
+}
+.about .container {
+    padding: 80px 0px;
+}
+
+.about-item {
+
+}
+.about-section-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color:#121417;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.about-text-title {
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center; 
+    color:#12141780;
+    margin-bottom: 40px;
+}
+
+.about-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color:#4DC274;
+    text-align: left;
+}
+
+.about-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-align: left; 
+    color:#121417;
+    margin-bottom: 40px;
+}
+.about-content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.about-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    row-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.about-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* width: 264px; */
+    height: 160px;
+    background-color: #F3F5F6;
+    border-radius: 16px;
+    padding: 32px;
+}
+.about-card-memoji {
+    background-color: #4DC274;
+    border-radius: 16px;
+    padding: 51px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* .about-card-memoji {
+    align-self: center;
+} */
+
+@media screen and (min-width: 768px) {
+    .about-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 32px;
+        column-gap: 32px;
+    }
+  .about-icon {
+  }
+  .about-item {
+    width: calc((100% - 32px) / 2);
+}
+  .about-title {
+        text-align: start;
+    }
+}
+@media screen and (min-width: 1158px) {
+  /* .about-icon {
+    width: 325px;
+  } */
+  .about-content-wrapper {
+    flex-direction: row;
+}
+  .about-list {
+    margin-bottom: 0px;
+    justify-content: start;
+  }
+  .about-item {
+    width: calc((100% - 72px) / 2);
+}
+    .about .container {
+    padding: 120px 0px;
+}
+    .about-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+    .about-text {
+        font-weight: 400;
+    }
+}
