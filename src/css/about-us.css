@@ -1,8 +1,8 @@
 .about {
-    
+    margin-bottom: 80px;
 }
 .about .container {
-    padding: 80px 0px;
+    padding: 0px 20px;
 }
 
 .about-item {
@@ -10,19 +10,36 @@
 }
 .about-section-title {
     font-weight: 700;
-    font-size: 28px;
-    line-height: 1.14;
+    font-size: 32px;
+    line-height: 1.13;
     letter-spacing: -0.02em;
     color:#121417;
     margin-bottom: 16px;
-    text-align: center;
+    text-align: center; 
+}
+.about-section-ttl-active {
+    position: relative;
+}
+.about-section-ttl-active::after {
+  content: '';
+  position: absolute;
+  z-index: -10;
+  left: 3px;
+  bottom: 5px;
+  width: 100%;
+  height: 15px;
+  border-radius: 8px;
+  background-color: #D4FDE1;
+;
+  /* color: linear-gradient(84.6deg, #4DC274 2.25%, #BEE8CC 131.25%); */
 }
 .about-text-title {
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0em;
     text-align: center; 
     color:#12141780;
-    margin-bottom: 40px;
+    margin-bottom: 40px;  
 }
 
 .about-title {
@@ -81,13 +98,22 @@
 } */
 
 @media screen and (min-width: 768px) {
+    .about {
+    margin-bottom: 100px;
+     }
     .about-list {
         flex-direction: row;
         flex-wrap: wrap;
         row-gap: 32px;
         column-gap: 32px;
     }
-  .about-icon {
+  .about-section-title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  .about-text-title {
+    font-size: 18px;
+    line-height: 1.17;
   }
   .about-item {
     width: calc((100% - 32px) / 2);
@@ -96,10 +122,10 @@
         text-align: start;
     }
 }
-@media screen and (min-width: 1158px) {
-  /* .about-icon {
-    width: 325px;
-  } */
+@media screen and (min-width: 1280px) {
+  .about {
+    margin-bottom: 150px;
+     }
   .about-content-wrapper {
     flex-direction: row;
 }
@@ -110,16 +136,5 @@
   .about-item {
     width: calc((100% - 72px) / 2);
 }
-    .about .container {
-    padding: 120px 0px;
-}
-    .about-title {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-    }
-    .about-text {
-        font-weight: 400;
-    }
+   
 }

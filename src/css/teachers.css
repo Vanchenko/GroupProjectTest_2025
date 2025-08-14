@@ -1,12 +1,13 @@
 .team {
     background-color:#FFFFFF;
+    margin-bottom: 80px;
 }
 
 .team .container {
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
-    padding: 80px 0px;
+    padding: 0px 20px;
     margin-top: 0px;
 }
 
@@ -73,13 +74,7 @@
     }
 }
 @media screen and (min-width: 1280px) {
-  .benefits-icon {
-    display: flex;
-  }
-  .benefits-item {
-    width: calc((100% - 72px) / 4);
-}
-    .team .container {
-    padding: 150px 0px;
+    .team {
+    margin-bottom: 150px;
 }
 }
